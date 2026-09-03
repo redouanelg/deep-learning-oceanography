@@ -1,2 +1,2 @@
-# deep-learning-oceanography-
+# deep-learning-oceanography
 Best practices in deep learning for oceanography
