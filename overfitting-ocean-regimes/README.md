@@ -19,10 +19,14 @@ so there is nothing to download and it runs offline. About four minutes on CPU.
 
 ## What it shows
 
-**1. Accuracy is a poor overfitting detector.** An oversized network trained on
-3000 labelled cells sends its held-out cross-entropy up sharply while held-out
-*accuracy* stays almost flat. It becomes confidently wrong rather than wrong.
-Monitor a proper scoring rule.
+**1. Accuracy is an insensitive overfitting detector.** An oversized network
+trained on 3000 labelled cells sends its held-out cross-entropy from 0.49 to
+1.23 while held-out *accuracy* slips only four points, 0.808 to 0.767. Four
+points are easy to dismiss as noise; a loss that more than doubles is not. And
+what the loss is catching is invisible to accuracy by construction: when the
+model is wrong it becomes far more confident about it, and the probability it
+leaves on the true regime falls from 0.21 to 0.09. Monitor a proper scoring
+rule.
 
 **2. A random split measures the wrong thing.** Same model, same data, and the
 generalisation gap depends only on how the test cells were chosen:
