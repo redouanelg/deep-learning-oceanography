@@ -1,7 +1,6 @@
 # Only for make_dataset.py, which rebuilds data/thor_step2_fields.npz from the
 # original sources. The notebook does not need these: the .npz is committed.
 -r requirements.txt
-scipy>=1.10
 gdown>=5.0
 xarray>=2023.1
 netCDF4>=1.6

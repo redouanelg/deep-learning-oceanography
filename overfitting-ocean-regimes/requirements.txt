@@ -1,6 +1,7 @@
 # Runs the notebook. Python 3.12, CPU only, no network needed.
 # Versions are lower bounds, not pins.
 numpy>=1.24
+scipy>=1.10
 matplotlib>=3.7
 scikit-learn>=1.3
 torch>=2.0
