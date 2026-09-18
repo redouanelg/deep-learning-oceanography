@@ -1,5 +1,7 @@
 # Overfitting, and the split that hides it
 
+Redouane Lguensat (Institut Pierre-Simon Laplace)
+
 A worked example of overfitting on a real ocean problem, and of the mistake that
 makes overfitting invisible in gridded geophysical data: **splitting cells at
 random**.
